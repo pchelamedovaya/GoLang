@@ -1,0 +1,17 @@
+services:
+  go:
+    build:
+      context: .
+      dockerfile: docker/go/Dockerfile
+    volumes:
+      - app:/app
+    ports:
+      - 8089:8089
+    networks:
+      - appnet
+    command:
+      - air
+
+networks:
+  appnet:
+    driver: bridge
