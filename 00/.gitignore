@@ -1,0 +1,11 @@
+.idea/
+.vscode/
+
+*.out
+*.exe
+*.test
+*.log
+*.tmp
+
+/app/tmp/main
+/app/tmp/build-errors.log
